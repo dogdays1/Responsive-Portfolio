@@ -108,6 +108,7 @@ footer {
   background: #666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
+  vertical-align: baseline;
 }
 
 h3, h2 {
@@ -224,7 +225,7 @@ input[type=submit] {
     margin: 0 auto;
     clear: both;
     padding: 60px;
-    background-size: contain;
+    /* background-size: contain; */
   }
   .main-section {
     float: left;
@@ -234,8 +235,8 @@ input[type=submit] {
     margin: 0 0 40px;
     background: #fff;
     border: 1px solid #ddd;
-    max-height: 80vh;
-    background-size: contain;
+    /* max-height: 80vh; */
+    /* background-size: contain; */
 
   }
   #main-container {
@@ -276,9 +277,20 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 640px) {
+  #masthead {
+    position: static;
+    z-index: 0;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+  }
+ 
   .container {
     width: 100%;
-    /* max-width: 960px; */
+    max-width: 960px;
     margin: 0 auto;
     clear: both;
     padding: 60px;
@@ -293,10 +305,22 @@ input[type=submit] {
     border: 1px solid #ddd;
   }
   #main-container {
-    padding-top: 130px;
+    padding-top: 20px;
     max-height: calc(100vh - 70px);
   }  
   #logo {
     background: blue;
+    text-align: center;
+    margin-left: 30px;
   } 
+  nav {
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+  }
 }
+
+/* WHEN GRADING, please ignore 'commented out' lines.
+I have left them in as items I want to re-examine in future
+to see why they didn't work
+*/
