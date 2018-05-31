@@ -224,7 +224,7 @@ input[type=submit] {
     /* max-width: 960px; */
     margin: 0 auto;
     clear: both;
-    padding: 60px;
+    /* padding: 60px; */
     /* background-size: contain; */
   }
   .main-section {
@@ -256,7 +256,7 @@ input[type=submit] {
     /* max-width: 960px; */
     margin: 0 auto;
     clear: both;
-    padding: 60px;
+    /* padding: 60px; */
   }
   .main-section {
     float: left;
@@ -303,6 +303,7 @@ input[type=submit] {
     margin: 0 0 40px;
     background: #fff;
     border: 1px solid #ddd;
+    min-width: 340px;
   }
   #main-container {
     padding-top: 20px;
